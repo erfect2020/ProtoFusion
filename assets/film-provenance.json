@@ -1,0 +1,30 @@
+{
+  "description": "Animated presentation of static current-manuscript examples; not recorded inference or new experimental evidence.",
+  "source_manuscript": "Article_Title/sn-article.tex",
+  "manuscript_sha256": "3e5fa6aa5ed7d77311d1aeca73f6fb41bfd8c6805e23a5aeb750c43b9c230be1",
+  "format": "H.264 / yuv420p / 1600x900 / 24fps / 32 seconds / silent",
+  "source_images": {
+    "sbc-1-1.webp": "a4b01cd11d4e17cfc467a02c07f698b0e22c587825fc4d322370a69f86871f43",
+    "sbc-1-0.webp": "55ca05252a680f657aa3d3fccc12c7a7cac53469f2f4db7a7ed6269794823b10",
+    "sbc-1-3.webp": "1055cc7b2225f0d6a39ed7190daf3d45747373b8f017044448231dcb9392672d",
+    "scene-07-01.webp": "9af90097819d43b82da4ff88a6886e5e7c076c786f3d1c51b5bd593001f8d473",
+    "scene-07-00.webp": "753714e5a57c0b23e4275fb71af14a5359898004925ccb044fe124cc200495a9",
+    "scene-07-09.webp": "e4dcfbf90c2f9112feaaef222f3108325d31694264a44b43e014fa8cd7bb4c29",
+    "pgpr-1-0.webp": "76cb866eac45c68ebc5ea13224d9c4c9f086b3f11e2d7b6e44c563b8a00220ca",
+    "pgpr-1-1.webp": "520d270ec2db90c74a48f0a4599f8e92d3b8af78da7409b4a2883f096f5bad27",
+    "pgpr-1-2.webp": "f471efba75d814c8465f322f5975a3a8b4c4be51d235e1657822c294230f22fc",
+    "pgpr-1-3.webp": "a1a8e6c22f523d02f0a6e2b89af228f9c330eaa27f7fb4b83d9ee8dc58464669",
+    "pgpr-1-4.webp": "de438aae50e28896420602815767cf42a61a7394de250770682d0ee2e1671497",
+    "sbc-3-1.webp": "49906879952c7b70f86836d346deb276975a8efa79ac997fd451b2d4a247fa1c",
+    "sbc-3-0.webp": "c2bb70656cfda48156fd7506baddf1545ace161dcee6e376e6350e03d7db16ec",
+    "sbc-3-2.webp": "6b7ed5e6b4d7ff73019c087aa942eb97eba06a4e20b209e9c4107332626d781c",
+    "sbc-3-3.webp": "5535cef76ccd273737cb6237d22d599947f054d0aaa94be30face4d4501802c5"
+  },
+  "operations": [
+    "Proportional image fitting",
+    "Typeset presentation captions",
+    "Actual source-image crops with matching full-image region indicators",
+    "Candidate focus outlines",
+    "Chapter progress indicators"
+  ]
+}

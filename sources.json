@@ -1,0 +1,1528 @@
+{
+  "source": "Article_Title/sn-article.tex",
+  "assets": {
+    "assets/scene-01-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im5; full image, original aspect ratio.",
+      "width": 900,
+      "height": 666
+    },
+    "assets/scene-01-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im6; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im7; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im8; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-01-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
+      "width": 900,
+      "height": 666
+    },
+    "assets/scene-01-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im11; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im12; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im13; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im14; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im15; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im16; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im17; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im18; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im19; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-02-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im20; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im21; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im22; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im23; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im24; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im25; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im26; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im27; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im28; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im29; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-03-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im30; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im31; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im32; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im33; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im34; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im35; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im36; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im37; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im38; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im39; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-04-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im40; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im41; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im42; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im43; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im44; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im45; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im46; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im47; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im48; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im49; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-05-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im50; full image, original aspect ratio.",
+      "width": 900,
+      "height": 675
+    },
+    "assets/scene-06-00.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im51; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-01.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im52; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-02.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im53; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-03.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im54; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-04.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im55; full image, original aspect ratio.",
+      "width": 900,
+      "height": 463
+    },
+    "assets/scene-06-05.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im56; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-06.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im57; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-07.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im58; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-06-08.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im59; full image, original aspect ratio.",
+      "width": 900,
+      "height": 463
+    },
+    "assets/scene-06-09.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Embedded image /Im60; full image, original aspect ratio.",
+      "width": 900,
+      "height": 485
+    },
+    "assets/scene-07-00.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.e4dbce410aa1b07ab5d53688b4ff7e16; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-01.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.5fa82409b8d7c6c58bb708df5bd20ecb; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-02.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.e24b277a055b25655947c1161c9e04b1; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-03.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.98f9644ec996b13d145e1fb021e8098d; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-04.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.4144ac492a283d7e7a538d01c6123ac4; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-05.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.489dd50ac85653989861e0f3158c46c2; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-06.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.34f4ca6c2915c87761e7174292c64863; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-07.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.0ec7f6bda115f6e0a488d398426e88b9; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-08.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.935f7c0707fd07a7ea8a6d4bc299dabd; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-07-09.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.e53327da5e1bbfd178658f47e06f296a; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-00.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.99b396dfb06d532628920dbc1b88772f; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-01.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.77f9767823a96309e6ab6bcd3cf144b4; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-02.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.f34fd0e20859a35a253053c5c9daa108; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-03.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.955cbf1290c0a17369c017df25424173; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-04.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.a6ef076692276bc3ad61505fad800470; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-05.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.59acafef8007abb2edcb8c877c9b2044; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-06.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.07d36169ac2cf82d39d2cf15328367da; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-07.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.61300d93c701378397c204cb260b7916; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-08.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.56f9b987903d3c7aef787df421a397f0; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-08-09.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.a5fe6b2908bdc8fae13eb6f39f3bc6c9; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-00.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.96dfcdf404c7c912a4232f4cd2174132; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-01.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.a7113d1651b408077412524e18ea9cfe; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-02.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.2c87ca5085c38d78400b3ebc09d757f7; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-03.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.240db13913b0db2e00e79f1026fb747c; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-04.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.f3b770c63027496041ff442c6b90099b; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-05.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.2a219f3ef8508e644afd6952dda272c7; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-06.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.db44ec4960e68f4959b7904bac6cd62e; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-07.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.a6a340babbb5a976e93cce46f977dc95; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-08.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.1f3f0fa5f50a9deaa173442abe87585e; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-09-09.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.cedafa231b70d5d5ca1592b6a867b4c9; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-00.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.43556de7ef8f27e75e850897f3511161; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-01.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.933c7ba164991a4303ebdb6e3a80a563; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-02.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.3353d1641a4353ba6dc6785b35c2e4c3; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-03.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.16e9fda38992345c359a0289e75c4fde; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-04.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.d603e756333dfc0bf00462f60c544532; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-05.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.cdd415f9ae4973d349d8dbc017207a8c; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-06.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.2f1e484e3ce6cc5a6016d54576a5a7cf; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-07.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.9254336c9d8386ce8f2941379d6908b7; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-08.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.92ab1d852d3027bb812e3eefcb7c6f3c; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/scene-10-09.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Embedded image /FormXob.c5f975edeffc930a380983ec66ec20b9; full image, original aspect ratio.",
+      "width": 400,
+      "height": 300
+    },
+    "assets/sbc-1-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/sbc-1-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/sbc-1-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-1-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-2-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im5; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/sbc-2-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im6; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/sbc-2-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im7; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-2-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im8; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-3-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im19; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/sbc-3-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im21; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/sbc-3-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im23; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-3-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im17; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-3-crop-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im20; full image, original aspect ratio.",
+      "width": 96,
+      "height": 96
+    },
+    "assets/sbc-3-crop-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im22; full image, original aspect ratio.",
+      "width": 96,
+      "height": 96
+    },
+    "assets/sbc-3-crop-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im24; full image, original aspect ratio.",
+      "width": 96,
+      "height": 96
+    },
+    "assets/sbc-3-crop-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im18; full image, original aspect ratio.",
+      "width": 96,
+      "height": 96
+    },
+    "assets/sbc-4-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/sbc-4-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im11; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/sbc-4-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im13; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-4-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im15; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/sbc-4-crop-0.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
+      "width": 128,
+      "height": 128
+    },
+    "assets/sbc-4-crop-1.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im12; full image, original aspect ratio.",
+      "width": 128,
+      "height": 128
+    },
+    "assets/sbc-4-crop-2.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im14; full image, original aspect ratio.",
+      "width": 128,
+      "height": 128
+    },
+    "assets/sbc-4-crop-3.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Embedded image /Im16; full image, original aspect ratio.",
+      "width": 128,
+      "height": 128
+    },
+    "assets/ir-1-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/ir-1-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-1-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-1-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
+      "width": 206,
+      "height": 182
+    },
+    "assets/ir-1-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im5; full image, original aspect ratio.",
+      "width": 206,
+      "height": 182
+    },
+    "assets/ir-1-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im6; full image, original aspect ratio.",
+      "width": 306,
+      "height": 270
+    },
+    "assets/ir-1-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im7; full image, original aspect ratio.",
+      "width": 306,
+      "height": 270
+    },
+    "assets/ir-2-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im8; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-2-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-2-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-2-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im11; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-2-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im12; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-2-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im13; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-2-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im14; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-3-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im15; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-3-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im16; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-3-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im17; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/ir-3-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im18; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-3-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im19; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-3-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im20; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-3-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im21; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-4-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im22; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-4-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im23; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-4-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im24; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-4-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im25; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-4-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im26; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-4-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im27; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-4-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im28; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-5-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im29; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/ir-5-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im30; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-5-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im31; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-5-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im32; full image, original aspect ratio.",
+      "width": 206,
+      "height": 182
+    },
+    "assets/ir-5-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im33; full image, original aspect ratio.",
+      "width": 206,
+      "height": 182
+    },
+    "assets/ir-5-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im34; full image, original aspect ratio.",
+      "width": 306,
+      "height": 270
+    },
+    "assets/ir-5-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im35; full image, original aspect ratio.",
+      "width": 306,
+      "height": 270
+    },
+    "assets/ir-6-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im36; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-6-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im37; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-6-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im38; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-6-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im39; full image, original aspect ratio.",
+      "width": 148,
+      "height": 130
+    },
+    "assets/ir-6-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im40; full image, original aspect ratio.",
+      "width": 148,
+      "height": 130
+    },
+    "assets/ir-6-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im41; full image, original aspect ratio.",
+      "width": 276,
+      "height": 242
+    },
+    "assets/ir-6-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im42; full image, original aspect ratio.",
+      "width": 276,
+      "height": 242
+    },
+    "assets/ir-7-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im43; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-7-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im44; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-7-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im45; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-7-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im46; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-7-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im47; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-7-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im48; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-7-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im49; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-8-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im50; full image, original aspect ratio.",
+      "width": 640,
+      "height": 480
+    },
+    "assets/ir-8-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im51; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-8-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im52; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/ir-8-crop-0.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im53; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-8-crop-1.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im54; full image, original aspect ratio.",
+      "width": 158,
+      "height": 140
+    },
+    "assets/ir-8-crop-2.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im55; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/ir-8-crop-3.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Embedded image /Im56; full image, original aspect ratio.",
+      "width": 296,
+      "height": 260
+    },
+    "assets/pgpr-1-0.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/pgpr-1-1.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/pgpr-1-2.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/pgpr-1-3.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/pgpr-1-4.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im5; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/pgpr-2-0.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im6; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/pgpr-2-1.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im7; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/pgpr-2-2.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im8; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/pgpr-2-3.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/pgpr-2-4.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
+      "width": 1000,
+      "height": 757
+    },
+    "assets/transfer-1-0.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-1-1.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-1-2.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/transfer-1-3.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
+      "width": 916,
+      "height": 611
+    },
+    "assets/transfer-2-0.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-2-1.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-2-2.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im11; full image, original aspect ratio.",
+      "width": 917,
+      "height": 694
+    },
+    "assets/transfer-2-3.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im12; full image, original aspect ratio.",
+      "width": 916,
+      "height": 611
+    },
+    "assets/transfer-3-0.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im17; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-3-1.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im18; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-3-2.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im19; full image, original aspect ratio.",
+      "width": 917,
+      "height": 687
+    },
+    "assets/transfer-3-3.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im20; full image, original aspect ratio.",
+      "width": 916,
+      "height": 611
+    },
+    "assets/transfer-4-0.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im25; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-4-1.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im26; full image, original aspect ratio.",
+      "width": 800,
+      "height": 600
+    },
+    "assets/transfer-4-2.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im27; full image, original aspect ratio.",
+      "width": 908,
+      "height": 687
+    },
+    "assets/transfer-4-3.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Embedded image /Im28; full image, original aspect ratio.",
+      "width": 916,
+      "height": 611
+    },
+    "assets/figure-overview.webp": {
+      "source": "Article_Title/Fig01_state.pdf",
+      "source_sha256": "224ef43a20e5efaaec106802b76720574433f1ad0d73490e63f567ef6d13891e",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2000,
+      "height": 698
+    },
+    "assets/figure-pgpr.webp": {
+      "source": "Article_Title/Fig02_protocoldiagram.pdf",
+      "source_sha256": "f848a8ecf8df1babfc3237d1ba38faa692d3f763a6bd9cb25da239765c1e234a",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2000,
+      "height": 774
+    },
+    "assets/figure-sbc.webp": {
+      "source": "Article_Title/Fig03_SBCdiagram.pdf",
+      "source_sha256": "f6f3dff0e352397da49575246c481abb8bea3e89f1c93a886c8a27add02ca2e5",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2000,
+      "height": 822
+    },
+    "assets/figure-night.webp": {
+      "source": "Article_Title/Fig04_trr.pdf",
+      "source_sha256": "0e25d2ae34ee1468b4ca300b90c1ab996e957c1ff39620432c69d63889263f7c",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2400,
+      "height": 1048
+    },
+    "assets/figure-day.webp": {
+      "source": "Article_Title/Fig11_final_visual_day.pdf",
+      "source_sha256": "5d0a1369150fb30f6fd95a937d61b982f45196ce41265a23bb53aee3370bbb11",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2400,
+      "height": 733
+    },
+    "assets/figure-ir.webp": {
+      "source": "Article_Title/Fig09_OnlyVIS.pdf",
+      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2400,
+      "height": 941
+    },
+    "assets/figure-trajectory.webp": {
+      "source": "Article_Title/Fig05_PGPRv1.pdf",
+      "source_sha256": "e1355e5c7d16587cc54c4ac2d6c0c1308ed1496d088f36de01fedf37a064e7f1",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2000,
+      "height": 794
+    },
+    "assets/figure-correction.webp": {
+      "source": "Article_Title/Fig06_SBC.pdf",
+      "source_sha256": "c3b03a92e6e1c6aeea7897d145ba44a561160a8ded217bb1a61dabdfbffadfec",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2400,
+      "height": 467
+    },
+    "assets/figure-transfer.webp": {
+      "source": "Article_Title/Fig13_GPTImage2.pdf",
+      "source_sha256": "1465ab35f2d9a120ba8b7fbedc924a0ea35fbc4d840e7df9be55dd9ad39b61bd",
+      "extraction": "Full first-page render; all original annotations preserved.",
+      "width": 2400,
+      "height": 1552
+    },
+    "assets/figure-factor-map.webp": {
+      "source": "Article_Title/Fig07b_intrinsic_functional_factor_map_pub.png",
+      "source_sha256": "d0835a943fee1065e0ea8843c70de7e76e2b1d790b50cc903f67134e6d07b798",
+      "extraction": "Whole image, scaled proportionally.",
+      "width": 1800,
+      "height": 1411
+    },
+    "assets/figure-allocation.webp": {
+      "source": "Article_Title/Fig07c_control_allocation_profile_matched_style.png",
+      "source_sha256": "8fbc07954fa03c84f424cd3f4a3215621e5285ce077db9c22b9cf58ecc747f27",
+      "extraction": "Whole image, scaled proportionally.",
+      "width": 1800,
+      "height": 1079
+    }
+  },
+  "manuscript_sha256": "3e5fa6aa5ed7d77311d1aeca73f6fb41bfd8c6805e23a5aeb750c43b9c230be1",
+  "paper_sha256": "e6e996cf53cbf6bbc80aebb1b247cfa889a41ebf2983931d4d3796b11f4f00d0",
+  "reference_zip_sha256": "d54785e6a435fad570d44ec6d4597cf0b39182e3777e661b723b89784bc6d19a",
+  "processing": "Full embedded images or full PDF renders; proportional resizing and WebP compression only. No inpainting, recoloring or synthesized outputs."
+}

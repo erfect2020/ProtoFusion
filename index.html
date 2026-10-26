@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ProtoFusion: Protocol-Guided Prompt Refinement for Generative Infrared and Visible Image Fusion. Explore a shared fusion protocol, qualitative comparisons and benchmark results.">
+  <meta property="og:title" content="ProtoFusion — Protocol-Guided Image Fusion">
+  <meta property="og:description" content="Learn a shared fusion protocol offline. Compose image-specific prompts at inference.">
+  <meta property="og:type" content="website">
+  <title>ProtoFusion — Protocol-Guided Image Fusion</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="experience.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#abstract">Skip to content</a>
+<div class="page" id="top">
+  <nav class="topbar" aria-label="Project navigation"><a class="brand" href="#top"><span class="brand-symbol" aria-hidden="true"><i></i><i></i></span>ProtoFusion</a><div><a href="#film">The film</a><a href="#hero-demo">Explore results <span aria-hidden="true">↗</span></a><a href="#method">How it works</a><button id="theme" class="text-button" aria-label="Switch color theme">◐ <span>Auto</span></button></div></nav>
+  <header class="hero">
+    <div class="hero-meta"><span>Generative image fusion</span><span class="meta-rule"></span><span>Research project · 2026</span></div>
+    <div class="hero-name"><h1 class="wordmark" aria-label="ProtoFusion"><span>Proto</span><span class="fusion-word">Fusion</span><span class="wordmark-dot">.</span></h1><svg class="fusion-emblem" viewBox="0 0 140 100" aria-hidden="true"><defs><pattern id="signal-lines" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0v8" stroke="currentColor" stroke-width="1"/></pattern></defs><circle class="signal-visible" cx="46" cy="50" r="35"/><circle class="signal-thermal" cx="92" cy="50" r="35"/><path class="signal-overlap" d="M69 24a35 35 0 0 1 0 52 35 35 0 0 1 0-52Z"/><path class="signal-axis" d="M0 50h140"/></svg></div>
+    <div class="hero-intro"><div><p class="paper-title">Protocol-Guided Prompt Refinement for<br>Generative Infrared and Visible Image Fusion</p><a class="film-link" href="#film"><span class="play-icon" aria-hidden="true">▶</span> Watch the visual story <span class="film-duration">32 sec</span><span aria-hidden="true">↘</span></a></div><div class="hero-byline">
+    <div>
+    <p class="authors"><span>Pengwei Liang<sup>1</sup></span><span>Junhui Hou<sup>1 *</sup></span><span>Junjun Jiang<sup>2</sup></span></p>
+    <p class="affiliations"><span><sup>1</sup> City University of Hong Kong</span><span><sup>2</sup> Harbin Institute of Technology</span></p>
+    <p class="author-note">* Corresponding author</p>
+    </div>
+    <div class="paper-links" aria-label="Project resources">
+      <span class="resource unavailable"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg>Paper <small>Coming soon</small></span>
+      <span class="resource unavailable"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>Code <small>Coming soon</small></span>
+    </div>
+    </div>
+    </div>
+    <div class="fusion-exhibit" id="hero-demo" aria-label="Visible, infrared and fusion shown together">
+      <div class="exhibit-header"><p><span class="exhibit-index" id="hero-index">01 / 06</span><strong id="hero-scene-title">Night city</strong></p><span class="exhibit-hint"><span class="live-dot"></span> Hover to explore · linked zoom</span></div>
+      <div id="hero-triptych" class="fusion-triptych"></div>
+      <div class="exhibit-footer"><p id="hero-status" role="status">Choose a scene to compare all three images.</p><button id="inspect-toggle" class="inspect-toggle" aria-expanded="false" aria-controls="hero-inspector"><span aria-hidden="true">⌕</span> Inspect together</button><div class="scene-arrows"><button id="hero-prev" aria-label="Previous scene">←</button><button id="hero-next" aria-label="Next scene">→</button></div></div>
+      <div id="hero-inspector" hidden><div class="inspector-top"><p>Move across any image. All three detail views follow.</p><button id="inspect-guide" class="text-button" aria-pressed="false">▶ Play detail tour</button></div><div id="detail-loupes" class="detail-loupes"></div><div class="inspector-sliders"><label>Horizontal position<input id="inspect-x" type="range" min="0" max="100" value="50"></label><label>Vertical position<input id="inspect-y" type="range" min="0" max="100" value="50"></label><span>3× linked detail</span></div></div>
+      <div id="hero-scenes" class="hero-scenes" role="group" aria-label="Choose a hero scene"></div>
+    </div>
+    <div class="tldr"><p><span class="eyebrow">The central idea</span>Learn the instruction.<br><span class="muted">Keep the model frozen.</span></p><p class="tldr-explainer">A shared protocol turns complementary visible and thermal evidence into an image-specific fusion prompt.</p><a class="round-link" href="#method" aria-label="Explore the method">↓</a></div>
+  </header>
+
+  <section class="film-section" id="film" aria-labelledby="film-title"><div class="film-heading"><div><span class="section-kicker">A visual introduction</span><h2 id="film-title">See the evidence.<br><span>Follow the idea.</span></h2></div><p>From paired inputs to prompt refinement and source-consistency correction. A short visual guide built from the paper’s figures.</p></div><div class="film-frame"><video id="project-film" width="1600" height="900" poster="assets/film-poster.webp" muted loop playsinline controls preload="metadata" aria-label="32-second ProtoFusion visual introduction using still-image evidence"><source src="assets/protofusion-film.mp4" type="video/mp4"><track kind="captions" src="assets/film-captions.vtt" srclang="en" label="English"></video><button id="film-play" class="film-play" aria-label="Play visual introduction"><span aria-hidden="true">▶</span> Play the film</button></div><div class="film-control-row"><button id="film-toggle" class="text-button" aria-pressed="false">▶ Play film</button><output id="film-clock" aria-label="Video time">00:00 / 00:32</output><span>Four chapters · paper evidence</span></div><div class="film-chapters" role="group" aria-label="Video chapters"><button data-time="0" aria-pressed="true"><span>01 / 00:00</span>Complementary inputs</button><button data-time="8" aria-pressed="false"><span>02 / 00:08</span>Across conditions</button><button data-time="16" aria-pressed="false"><span>03 / 00:16</span>Prompt refinement</button><button data-time="24" aria-pressed="false"><span>04 / 00:24</span>Source correction</button></div><p class="film-caption">Animated presentation of manuscript examples. Images are static experimental results; this is not a recording of inference.</p></section>
+
+  <div class="layout">
+    <aside class="rail"><nav aria-label="On this page"><span class="rail-title">On this page</span><a href="#abstract">Abstract</a><a href="#results">Fusion results</a><a href="#infrared">Why infrared?</a><a href="#refinement">Prompt refinement</a><a href="#correction">Source consistency</a><a href="#method">The method</a><a href="#evaluation">Evaluation</a><a href="#generators">Across generators</a></nav></aside>
+    <main>
+      <details class="mobile-toc"><summary>Explore the project <span>↓</span></summary><nav aria-label="Page sections"><a href="#results">Fusion results</a><a href="#infrared">Why infrared?</a><a href="#refinement">Prompt refinement</a><a href="#correction">Source consistency</a><a href="#method">The method</a><a href="#evaluation">Evaluation</a><a href="#generators">Across generators</a></nav></details>
+
+      <section id="abstract" class="section">
+        <div class="section-kicker">01 / Overview</div><h2>Fusion, guided by <span>a protocol.</span></h2>
+        <p class="lede">Specify what to preserve. Learn how to instruct.<br>Fuse complementary evidence with frozen generative models.</p>
+        <div class="idea-flow" aria-label="ProtoFusion in three steps"><div><span>01</span><strong>Structure the intent</strong><p>Environment state cards, grounding principles and a style profile.</p></div><div><span>02</span><strong>Refine the protocol</strong><p>Generate, evaluate and revise offline with multimodal evidence.</p></div><div><span>03</span><strong>Compose &amp; fuse</strong><p>Keep the learned protocol fixed. Adapt the prompt to each image pair.</p></div></div>
+        <details class="fold abstract-fold"><summary>Read the abstract</summary>
+        <div class="prose abstract"><p>Infrared and visible image fusion integrates complementary information from both modalities to provide a more comprehensive representation of the scene. We propose <strong>ProtoFusion</strong>, a protocol-guided generative framework for infrared and visible image fusion. Instead of relying on fixed fusion operators, hand-crafted objectives, or manually specified one-shot prompts, ProtoFusion formulates fusion as <strong>protocol-constrained generation</strong>. It represents fusion intent with a structured protocol, consisting of environment state cards, grounding principles, and a style profile, which explicitly specifies which evidence should be preserved or suppressed and which properties the fused result should satisfy.</p>
+        <p>To optimize this protocol, we introduce protocol-guided prompt refinement, a closed-loop learning framework that iteratively performs generation, evaluation, and revision under multimodal evidence. Once learned, the optimized protocol is fixed at inference time and directly guides fusion generation. To address residual source inconsistencies, we further incorporate structured belief construction, which organizes modality reliability, scene evidence, and cross-modal conflicts into a structured representation for conservative correction after generation. Extensive experiments on standard benchmarks show that ProtoFusion improves quantitative performance, achieves favorable results in aesthetic evaluation, and produces visually coherent fusion outputs. The code will be publicly available.</p></div>
+        </details><details class="fold"><summary>Framework at a glance</summary><figure data-figure="overview"><figcaption>Protocol-constrained generation and optional source-consistency correction. Original overview from the manuscript.</figcaption></figure></details>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-kicker">02 / Qualitative results</div><h2>Across <span>challenging conditions.</span></h2>
+        <p class="lede">Preserve thermal targets and visible structure—from low light and glare to daylight and overexposure.</p>
+        <div class="control-row gallery-heading"><p class="minor-title">10 scenes · night to daylight</p><span class="hint">Select a scene below</span></div>
+        <div id="scene-grid" class="scene-grid" role="group" aria-label="Choose a comparison scene"></div>
+        <div id="scene-detail" class="detail-panel" aria-label="Selected scene comparison"></div>
+        <details class="fold"><summary>View the complete comparison figures</summary><figure data-figure="night"><figcaption>Figure 4 · Six scenes with the original annotations and enlarged details.</figcaption></figure><figure data-figure="day"><figcaption>Figure 5 · Four daytime scenes. Columns: IR, VIS, CDDFuse, DDFM, Text-IF, C2RF, DCEvo, Deno-IF, LUT-Fuse and ProtoFusion.</figcaption></figure></details>
+      </section>
+
+      <section id="infrared" class="section">
+        <div class="section-kicker">03 / Input ablation</div><h2>What does <span>infrared contribute?</span></h2>
+        <p class="lede">The paired infrared input changes target visibility and structural rendering relative to the VIS-only setting.</p>
+        <div id="ir-cases" class="case-strip"></div><div id="ir-detail"></div>
+        <p class="caption">Eight examples from the infrared-input ablation. The diagonal input panel and highlighted details are taken directly from the figure. Red annotations belong to the original evidence.</p>
+        <details class="fold"><summary>View the full input ablation</summary><figure data-figure="ir"><figcaption>Figure 6 · IR/VIS inputs, VIS-only generation and IR+VIS generation.</figcaption></figure></details>
+      </section>
+
+      <section id="refinement" class="section">
+        <div class="section-kicker">04 / Protocol-guided prompt refinement</div><h2>Refine the instruction.<br><span>Inspect the generation.</span></h2>
+        <p class="lede">PGPR closes the loop between generation, multimodal evaluation and structured protocol revision.</p>
+        <div id="trajectory-cases"></div><div id="trajectory-detail"></div>
+        <p class="caption">Three displayed candidates per example, with the corresponding prompt excerpts from Figure 7. Candidate indices denote display order; the figure does not identify the accepted rounds or the final retained output.</p>
+        <h3>How much refinement?</h3>
+        <div class="control-row"><p class="minor-title">FMB · UniPercept</p><div id="budget-metrics"></div></div>
+        <div id="budget-chart" class="budget-chart"></div>
+        <p class="caption">All 280 FMB test pairs; base PGPR without SBC. T = 6 gives the highest reported Overall score among these budgets. More rounds do not guarantee better measured quality.</p>
+        <h3>What belongs in the protocol?</h3>
+        <div id="component-options" class="component-options"></div><div id="component-result" class="component-result" aria-live="polite"></div>
+        <p class="caption">Component ablation on all 280 FMB test pairs. Full PGPR uses T = 6 without SBC; the initial and optimized protocols are different experimental settings.</p>
+      </section>
+
+      <section id="correction" class="section comparison-section">
+        <div class="comparison-intro"><div><div class="section-kicker">05 / Structured belief construction</div><h2>A second look<br><span>at the evidence.</span></h2></div><p class="lede">SBC organizes source reliability and cross-modal conflicts to make a conservative, scoped correction after generation.</p></div>
+        <div id="sbc-cases" class="case-strip comparison-cases"></div><div id="sbc-detail"></div>
+        <p class="caption">Compare base PGPR with PGPR + SBC in four examples. SBC performs at most one additional generation; when no valid correction is available, the prior output is retained.</p>
+        <div class="evidence-metrics-head"><div><span class="eyebrow">Error rate · lower is better</span><h3>Fewer errors. Residual errors remain.</h3></div><label class="select-label">Category <select id="error-category"><option>Any error</option><option>Content alteration</option><option>Geometric distortion</option><option>Information omission</option><option>Appearance artifacts</option></select></label></div>
+        <div id="error-chart" class="error-chart" aria-live="polite"></div>
+        <p class="caption">Comprehensive human review of all 280 FMB test pairs. Categories can overlap; “Any error” counts each affected image once. These measurements describe the reviewed test set, not a guarantee of source fidelity.</p>
+        <details class="fold"><summary>View the complete SBC examples and error table</summary><figure data-figure="correction"><figcaption>Figure 8 · Infrared, visible, PGPR and PGPR + SBC.</figcaption></figure><div id="error-table" class="table-wrap" tabindex="0" role="region" aria-label="Full error rates"></div></details>
+      </section>
+
+      <section id="method" class="section">
+        <div class="section-kicker">06 / The method</div><h2>One protocol. <span>Two stages.</span></h2>
+        <p class="lede">Learn the protocol offline, then keep it fixed while composing a new prompt for each infrared–visible pair.</p>
+        <div id="stage-modes"></div><div id="method-flow" class="method-flow"></div>
+        <p class="caption" id="stage-caption"></p>
+        <h3>Inside the protocol</h3>
+        <p class="prose">Three complementary slots make the fusion intent explicit. The excerpts below come from the <strong>initial protocol</strong> provided in the manuscript appendix.</p>
+        <div id="protocol-tabs"></div><div id="protocol-panel" class="protocol-panel" aria-live="polite"></div>
+        <details class="fold"><summary>What can change during refinement?</summary><div class="prose"><p>PGPR can add an environment item, revise a grounding principle or add a grounding principle. The style profile stays fixed. Invalid edits leave the incumbent unchanged; worse or fatal candidates are rejected.</p><p>The retained critic score is non-decreasing by selection. This is a property of the selection rule and does not imply monotonically improving true image quality. The final optimized protocol is not included in the current manuscript.</p></div></details>
+        <details class="fold"><summary>Original method diagrams</summary><figure data-figure="pgpr"><figcaption>Figure 2 · Offline protocol-guided prompt refinement (PGPR).</figcaption></figure><figure data-figure="sbc"><figcaption>Figure 3 · Structured belief construction (SBC). SAM regions are analysis units, not fusion masks. SBC does not rerun PGPR.</figcaption></figure></details>
+        <details class="fold"><summary>Protocol analysis: factors and control allocation</summary><figure data-figure="factor-map"><figcaption>Figure 9 (left) · Intrinsic and functional factor map.</figcaption></figure><figure data-figure="allocation"><figcaption>Figure 9 (right) · Control allocation profile.</figcaption></figure></details>
+      </section>
+
+      <section id="evaluation" class="section">
+        <div class="section-kicker">07 / Quantitative evaluation</div><h2>A shared protocol.<br><span>Three benchmarks.</span></h2>
+        <p class="lede">A single protocol, refined on FMB training data, is evaluated on the full test sets of FMB, MSRS and RoadScene.</p>
+        <div class="dataset-facts"><span><strong>280</strong>FMB pairs</span><span><strong>361</strong>MSRS pairs</span><span><strong>221</strong>RoadScene pairs</span></div>
+        <div class="control-row"><div id="eval-datasets"></div><div id="eval-metrics"></div></div>
+        <div class="chart-heading"><h3 id="benchmark-title">UniPercept · FMB · Overall</h3><span>Higher is better ↑</span></div>
+        <div id="benchmark-chart" class="benchmark-chart" aria-live="polite"></div>
+        <p class="caption">ProtoFusion uses PGPR + SBC on all three benchmarks. UniPercept reports image aesthetics (IAA), image quality (IQA), structure and texture (ISTA) and its aggregate Overall score. All methods and values are retained below.</p>
+        <details class="fold"><summary>Full UniPercept results</summary><div id="uni-tables"></div></details>
+        <details class="fold"><summary>Full image-quality results · nine metrics</summary><p class="caption">Directions are shown in each column. Bold marks the best result; an underline marks second best. Values retain the manuscript’s four-decimal precision.</p><div id="main-tables"></div></details>
+        <h3>Downstream semantic segmentation</h3>
+        <p class="prose">A frozen CLIPer evaluates the fused images on the FMB test set. The manuscript reports eight classes, with mean IoU and mean accuracy summarized below.</p>
+        <div class="seg-summary"><div><span>Mean IoU ↑</span><strong>0.554</strong><small>Text-IF: 0.513</small></div><div><span>Mean accuracy ↑</span><strong>0.684</strong><small>Text-IF: 0.637</small></div><p>Road · Building · Sky · Car<br>Truck · Bus · Vegetation · Pole</p></div>
+        <details class="fold"><summary>Full segmentation results · eight reported classes</summary><div id="seg-table" class="table-wrap" tabindex="0" role="region" aria-label="FMB segmentation results"></div></details>
+      </section>
+
+      <section id="generators" class="section comparison-section">
+        <div class="comparison-intro"><div><div class="section-kicker">08 / Generator transfer</div><h2>One protocol.<br><span>Different generators.</span></h2></div><p class="lede">Four qualitative examples reuse the same fixed protocol with Qwen-Image-Edit and GPT Image 2.</p></div>
+        <div id="generator-cases" class="case-strip comparison-cases"></div><div id="generator-detail"></div>
+        <p class="caption">Original image proportions are preserved. These examples illustrate qualitative transfer; they are not a matched quantitative comparison of the generators.</p>
+        <details class="fold"><summary>View the full cross-generator figure</summary><figure data-figure="transfer"><figcaption>Figure 10 · Infrared, visible, Qwen-Image-Edit and GPT Image 2, with the original annotated details.</figcaption></figure></details>
+        <details class="fold"><summary>Runtime configurations</summary>
+        <div class="runtime"><p><strong>~188<span>s</span></strong><span>Qwen-Image-Edit configuration</span></p><span class="runtime-divider" aria-hidden="true">/</span><p><strong>~9<span>s</span></strong><span>Qwen-Image-2.1-Turbo configuration</span></p></div>
+        <p class="caption">Reported end-to-end base-inference times under different runtime configurations. Offline protocol learning and optional SBC are excluded. The manuscript does not provide a matched quality evaluation for these two configurations.</p>
+        </details>
+      </section>
+
+      <section id="citation" class="section citation">
+        <div class="section-kicker">09 / Citation</div><h2>BibTeX</h2>
+        <!-- Reserved for the final release citation. -->
+        <div class="citation-placeholder" aria-hidden="true"></div>
+      </section>
+    </main>
+  </div>
+  <footer><span>ProtoFusion · 2026</span><p>Page design inspired by <a href="https://github.com/Dwawayu/scr4tch" target="_blank" rel="noopener noreferrer">Scr4tch ↗</a><br>All experimental images and results are from the current ProtoFusion manuscript.</p><a href="#top">Back to top ↑</a></footer>
+</div>
+<dialog id="image-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span id="dialog-title">Figure</span><button id="close-dialog" class="text-button" aria-label="Close enlarged figure">Close ×</button></div><img id="dialog-image" alt=""><p class="caption">Scroll to inspect the full figure. Press Escape to close.</p></dialog>
+<noscript><p class="noscript">Enable JavaScript to explore the image comparisons and interactive results.</p></noscript>
+</body>
+</html>
