@@ -80,7 +80,7 @@
         window.removeEventListener('scroll',reset);window.removeEventListener('resize',reset);
       });
     }
-    ['hero-triptych','scene-detail','sbc-detail','generator-detail'].forEach(bind);
+    ['hero-triptych','scene-detail','ir-detail','sbc-detail','generator-detail'].forEach(bind);
     window.addEventListener('proto:scenechange',()=>bind('hero-triptych'));
     window.addEventListener('proto:comparisonchange',event=>bind(event.detail.root));
   }

@@ -2,6 +2,8 @@
   "description": "Animated presentation of static current-manuscript examples; not recorded inference or new experimental evidence.",
   "source_manuscript": "Article_Title/sn-article.tex",
   "manuscript_sha256": "3e5fa6aa5ed7d77311d1aeca73f6fb41bfd8c6805e23a5aeb750c43b9c230be1",
+  "verified_against_manuscript_sha256": "1700a0d37b299c2798211c690f6a10dd3d4f51549a8a3cc5d6ac3415a86a5752",
+  "revision_note": "All film source images are unchanged in the 28 October 2026 manuscript. The film remains an introduction to complementary inputs, prompt refinement and SBC; updated infrared controls and numerical results are presented in the interactive page.",
   "format": "H.264 / yuv420p / 1600x900 / 24fps / 32 seconds / silent",
   "source_images": {
     "sbc-1-1.webp": "a4b01cd11d4e17cfc467a02c07f698b0e22c587825fc4d322370a69f86871f43",

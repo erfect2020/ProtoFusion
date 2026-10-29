@@ -6,27 +6,17 @@
   const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const metrics = ['IAA', 'IQA', 'ISTA', 'Overall'];
-  const budget = [
-    {label:'T = 1', values:[31.6094,40.7125,45.5683,39.2967]},
-    {label:'T = 3', values:[32.6509,44.7830,48.3902,41.9414]},
-    {label:'T = 6', values:[39.8040,52.3004,51.2281,47.7775]},
-    {label:'T = 9', values:[35.3487,47.0103,49.6121,43.9903]},
-  ];
-  const components = [
-    {label:'Human Prompt',values:[29.1049,39.2397,46.0433,38.1293],text:'A manually crafted prompt provides the reference setting before a structured protocol is introduced.'},
-    {label:'Initial Protocol',values:[31.6094,40.7125,45.5683,39.2967],text:'The initial structured protocol, before offline refinement.'},
-    {label:'Principles Only',values:[30.6170,40.6623,45.9330,39.0708],text:'Grounding principles alone, without the complementary environment state cards and style profile.'},
-    {label:'w/o State Cards',values:[34.4786,44.3286,48.4580,42.4217],text:'Removing environment state cards reduces the Overall score to 42.4217. Source-conditioned guidance contributes to the complete protocol.'},
-    {label:'w/o Style Profile',values:[35.3647,45.3844,48.7804,43.1765],text:'Removing the style profile reduces the Overall score to 43.1765, indicating the contribution of explicit appearance guidance.'},
-    {label:'Full PGPR',values:[39.8040,52.3004,51.2281,47.7775],text:'All three protocol slots, refined offline with T = 6. The optimized protocol stays fixed during inference; model weights remain frozen.'},
-  ];
-  const errorRates = {
-    'Any error':[53.93,38.21,19.64],
-    'Content alteration':[36.43,26.43,14.29],
-    'Geometric distortion':[5.00,1.79,0.71],
-    'Information omission':[4.64,3.93,2.86],
-    'Appearance artifacts':[25.36,11.43,3.57],
+  const budget = D.budget;
+  const componentDescriptions = {
+    'Human Prompt':'A manually crafted prompt provides the reference setting before a structured protocol is introduced.',
+    'Initial Protocol':'The initial structured protocol, before offline refinement.',
+    'Principles Only':'Grounding principles alone, without the complementary environment state cards and style profile.',
+    'w/o State Cards':'Removing environment state cards weakens source-conditioned guidance. The complete protocol adapts to source conditions and modality reliability.',
+    'w/o Style Profile':'Removing the style profile weakens explicit control over the intended visible-light appearance.',
+    'Full PGPR':'All three protocol slots, refined offline with T = 6. The optimized protocol stays fixed during inference; model weights remain frozen.',
   };
+  const components = D.components;
+  const errorRates = D.errorRates;
   const errorMethods = ['Human Prompt','PGPR','PGPR + SBC'];
   const excerpts = [
     ['… Increase luminance/contrast of pedestrian regions for saliency while preserving visible realism. …',
@@ -200,10 +190,14 @@
     caseStrip('#ir-cases',D.irCases,s=>s.images['IR+VIS'],i=>{selected=i;render();});
     function render(){
       const s=D.irCases[selected],root=$('#ir-detail');root.replaceChildren();
-      const layout=el('div','ir-view');layout.append(panel(s.images.input,'IR / VIS inputs'));
-      const output=el('div','ir-output-area');output.append(compare(s.images['VIS-only'],s.images['IR+VIS'],'VIS-only','IR + VIS'));
-      layout.append(output);root.append(layout);
-      const crops=el('div','crop-row');s.insets.forEach((src,i)=>crops.append(panel(src,['IR detail','VIS detail','VIS-only detail','IR + VIS detail'][i])));root.append(crops);
+      const sources=el('div','ir-sources');
+      sources.append(panel(s.images.VIS,'Visible','Fixed in all three settings'),panel(s.images['Shuffled IR'],'Shuffled infrared','An unrelated scene'),panel(s.images.IR,'Paired infrared','Same scene'));
+      const outputs=el('div','fusion-triptych ir-results');
+      outputs.append(panel(s.images['VIS-only'],'VIS only','No infrared input'),panel(s.images['Shuffled IR+VIS'],'Shuffled IR + VIS','Unrelated infrared input'),panel(s.images['IR+VIS'],'Paired IR + VIS','Original infrared input'));
+      root.append(sources,outputs,el('p','evidence-hover-hint','Hover over the outputs for linked 2.5× detail'));
+      const fold=el('details','fold evidence-details');fold.append(el('summary','','Inspect the original highlighted details'));
+      const crops=el('div','crop-row ir-detail-crops');s.insets.forEach((src,i)=>crops.append(panel(src,['VIS-only detail','Paired IR + VIS detail'][i])));fold.append(crops);root.append(fold);
+      window.dispatchEvent(new CustomEvent('proto:comparisonchange',{detail:{root:'ir-detail'}}));
     }render();
   }
 
@@ -217,9 +211,14 @@
     }render();
     let metric='Overall';
     segments('#budget-metrics',metrics,metric,'Refinement budget metric',v=>{metric=v;renderBudget();});
-    function renderBudget(){const i=metrics.indexOf(metric),root=$('#budget-chart');root.replaceChildren();root.setAttribute('aria-label',`Refinement budget: ${metric}`);budget.forEach((b,j)=>{const col=el('div','budget-column');const bar=el('div','budget-bar'+(j===2?' best':''));bar.style.height=(b.values[i]/60*100)+'%';bar.append(el('span','budget-value',b.values[i].toFixed(4)));col.append(bar,el('span','budget-label',b.label));root.append(col);});animateBars(root,'.budget-bar','Y');}renderBudget();
+    function renderBudget(){const i=metrics.indexOf(metric),root=$('#budget-chart'),best=Math.max(...budget.map(b=>b.values[i]));root.replaceChildren();root.setAttribute('aria-label',`Refinement budget: ${metric}`);budget.forEach(b=>{const col=el('div','budget-column');const bar=el('div','budget-bar'+(b.values[i]===best?' best':''));bar.style.height=(b.values[i]/60*100)+'%';bar.append(el('span','budget-value',b.values[i].toFixed(4)));col.append(bar,el('span','budget-label',b.label));root.append(col);});animateBars(root,'.budget-bar','Y');}renderBudget();
     components.forEach((c,i)=>{const button=el('button','',c.label);button.setAttribute('aria-pressed',String(i===5));button.addEventListener('click',()=>{ $$('#component-options button').forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));renderComponent(i);});$('#component-options').append(button);});
-    function renderComponent(i){const c=components[i],root=$('#component-result'),values=el('div','metric-values');root.replaceChildren();c.values.forEach((v,j)=>{const metric=el('div');metric.append(el('span','',metrics[j]+' ↑'),el('strong','',v.toFixed(4)));values.append(metric);});root.append(values,el('p','',c.text));}renderComponent(5);
+    function renderComponent(i){const c=components[i],root=$('#component-result'),values=el('div','metric-values');root.replaceChildren();c.values.forEach((v,j)=>{const metric=el('div');metric.append(el('span','',metrics[j]+' ↑'),el('strong','',v.toFixed(4)));values.append(metric);});root.append(values,el('p','',componentDescriptions[c.label]));}renderComponent(5);
+    let promptMetric='Overall';
+    segments('#prompt-metrics',metrics,promptMetric,'Prompt optimization metric',v=>{promptMetric=v;renderPrompt();});
+    function renderPrompt(){const i=metrics.indexOf(promptMetric);$('#prompt-comparison').setAttribute('aria-label',`Prompt optimization: ${promptMetric}`);barChart($('#prompt-comparison'),D.promptComparison,i,60);}
+    renderPrompt();
+    $('#prompt-table').append(table(D.promptComparison,metrics.map(m=>m+' ↑'),'FMB · prompt optimization and SBC',4));
   }
 
   function initCorrection(){
@@ -249,18 +248,32 @@
 
   function table(rows,headers,caption,precision=4,lowColumns=[],ranked=true) {
     const t=el('table');t.append(el('caption','',caption));const head=el('thead'),tr=el('tr');
-    ['Method',...headers].forEach(h=>{const cell=el('th','',h);cell.scope='col';tr.append(cell);});head.append(tr);t.append(head);const body=el('tbody');
+    const venues=rows.some(row=>'venue' in row);
+    ['Method',...(venues?['Venue']:[]),...headers].forEach(h=>{const cell=el('th','',h);cell.scope='col';tr.append(cell);});head.append(tr);t.append(head);const body=el('tbody');
     const ranks=headers.map((_,j)=>[...new Set(rows.map(r=>r.values[j]))].sort((a,b)=>lowColumns.includes(j)?a-b:b-a));
-    rows.forEach(row=>{const tr=el('tr',row.method==='ProtoFusion'?'ours':'');const name=el('th','',row.method);name.scope='row';tr.append(name);row.values.forEach((v,j)=>{const rank=ranked?ranks[j].indexOf(v):-1;tr.append(el('td',rank===0?'best':rank===1?'second':'',v.toFixed(precision)));});body.append(tr);});t.append(body);return t;
+    rows.forEach(row=>{const tr=el('tr',['ProtoFusion','PGPR+SBC'].includes(row.method)?'ours':'');const name=el('th','',row.method);name.scope='row';tr.append(name);if(venues)tr.append(el('td','venue-cell',row.venue||'—'));row.values.forEach((v,j)=>{const rank=ranked?ranks[j].indexOf(v):-1;tr.append(el('td',rank===0?'best':rank===1?'second':'',v.toFixed(precision)));});body.append(tr);});t.append(body);return t;
   }
   function wrapTable(table,label){const wrap=el('div','table-wrap');wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label',label);wrap.append(table);return wrap;}
+  function barChart(root,rows,index,maximum){
+    root.replaceChildren();rows.forEach(r=>{const row=el('div','benchmark-row'+(['ProtoFusion','PGPR+SBC'].includes(r.method)?' ours':'')),track=el('div','bar-track'),bar=el('div','bar-fill');bar.style.width=r.values[index]/maximum*100+'%';track.append(bar);row.append(el('span','bar-label',r.method),track,el('span','bar-value',r.values[index].toFixed(4)));root.append(row);});animateBars(root,'.bar-fill','X');
+  }
   function initEvaluation(){
-    let dataset='FMB',metric='Overall';
+    let dataset='FMB',metric='Overall',family='UniPercept';
+    const sourceLabels=['CE','Q_AB/F','VIF'];
+    segments('#eval-families',['UniPercept','Source-referenced'],family,'Evaluation family',v=>{family=v;metric=v==='UniPercept'?'Overall':'Q_AB/F';metricControls();render();});
     segments('#eval-datasets',D.datasets,dataset,'Evaluation dataset',v=>{dataset=v;render();});
-    segments('#eval-metrics',metrics,metric,'Evaluation metric',v=>{metric=v;render();});
-    function render(){const root=$('#benchmark-chart');root.replaceChildren();$('#benchmark-title').textContent=`UniPercept · ${dataset} · ${metric}`;const i=metrics.indexOf(metric);D.uni[dataset].forEach(r=>{const row=el('div','benchmark-row'+(r.method==='ProtoFusion'?' ours':'')),track=el('div','bar-track'),bar=el('div','bar-fill');bar.style.width=r.values[i]/60*100+'%';track.append(bar);row.append(el('span','bar-label',r.method),track,el('span','bar-value',r.values[i].toFixed(4)));root.append(row);});animateBars(root,'.bar-fill','X');}render();
-    D.datasets.forEach(d=>{$('#uni-tables').append(wrapTable(table(D.uni[d],metrics.map(m=>m+' ↑'),d),d+' UniPercept results'));$('#main-tables').append(wrapTable(table(D.main[d],D.mainMetrics,d,4,[4]),d+' image-quality results'));});
+    function metricControls(){segments('#eval-metrics',family==='UniPercept'?metrics:sourceLabels,metric,'Evaluation metric',v=>{metric=v;render();});}metricControls();
+    function render(){
+      const isUni=family==='UniPercept',rows=(isUni?D.uni:D.sourceResults)[dataset],i=(isUni?metrics:sourceLabels).indexOf(metric);
+      $('#benchmark-title').textContent=`${family} · ${dataset} · ${metric}`;
+      $('#benchmark-direction').textContent=metric==='CE'?'Lower is better ↓':'Higher is better ↑';
+      $('#benchmark-caption').textContent=isUni?'ProtoFusion uses PGPR + SBC on all three benchmarks. UniPercept reports image aesthetics (IAA), image quality (IQA), structure and texture (ISTA) and its aggregate Overall score. All methods and values are retained below.':'CE measures source discrepancy; Q_AB/F measures edge transfer; VIF measures visual information fidelity. ProtoFusion leads Q_AB/F on all three datasets; CE and VIF rankings vary. This appendix comparison includes APTP and DPOFusion.';
+      barChart($('#benchmark-chart'),rows,i,isUni?60:Math.ceil(Math.max(...rows.map(r=>r.values[i]))*10)/10);
+    }render();
+    D.datasets.forEach(d=>{$('#uni-tables').append(wrapTable(table(D.uni[d],metrics.map(m=>m+' ↑'),d),d+' UniPercept results'));$('#main-tables').append(wrapTable(table(D.main[d],D.mainMetrics,d,4,[4]),d+' image-quality results'));$('#source-tables').append(wrapTable(table(D.sourceResults[d],D.sourceMetrics,d,4,[0]),d+' source-referenced results'));});
     $('#seg-table').append(table(D.seg,['mIoU ↑','mAcc ↑',...['Road','Building','Sky','Car','Truck','Bus','Veg.','Pole'].flatMap(c=>[c+' IoU ↑',c+' Acc ↑'])],'FMB · frozen CLIPer · eight reported classes',3));
+    const ours=D.seg.find(r=>r.method==='ProtoFusion'),competitors=D.seg.filter(r=>r.method!=='ProtoFusion');
+    ['iou','acc'].forEach((key,i)=>{const best=competitors.reduce((a,b)=>a.values[i]>=b.values[i]?a:b);$('#seg-'+key).textContent=ours.values[i].toFixed(3);$('#seg-'+key+'-baseline').textContent=`${best.method}: ${best.values[i].toFixed(3)}`;});
   }
   function initGenerators(){
     caseStrip('#generator-cases',D.transfer,s=>s.images['GPT Image 2'],render);

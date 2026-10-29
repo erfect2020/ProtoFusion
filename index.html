@@ -58,7 +58,7 @@
         <div class="idea-flow" aria-label="ProtoFusion in three steps"><div><span>01</span><strong>Structure the intent</strong><p>Environment state cards, grounding principles and a style profile.</p></div><div><span>02</span><strong>Refine the protocol</strong><p>Generate, evaluate and revise offline with multimodal evidence.</p></div><div><span>03</span><strong>Compose &amp; fuse</strong><p>Keep the learned protocol fixed. Adapt the prompt to each image pair.</p></div></div>
         <details class="fold abstract-fold"><summary>Read the abstract</summary>
         <div class="prose abstract"><p>Infrared and visible image fusion integrates complementary information from both modalities to provide a more comprehensive representation of the scene. We propose <strong>ProtoFusion</strong>, a protocol-guided generative framework for infrared and visible image fusion. Instead of relying on fixed fusion operators, hand-crafted objectives, or manually specified one-shot prompts, ProtoFusion formulates fusion as <strong>protocol-constrained generation</strong>. It represents fusion intent with a structured protocol, consisting of environment state cards, grounding principles, and a style profile, which explicitly specifies which evidence should be preserved or suppressed and which properties the fused result should satisfy.</p>
-        <p>To optimize this protocol, we introduce protocol-guided prompt refinement, a closed-loop learning framework that iteratively performs generation, evaluation, and revision under multimodal evidence. Once learned, the optimized protocol is fixed at inference time and directly guides fusion generation. To address residual source inconsistencies, we further incorporate structured belief construction, which organizes modality reliability, scene evidence, and cross-modal conflicts into a structured representation for conservative correction after generation. Extensive experiments on standard benchmarks show that ProtoFusion improves quantitative performance, achieves favorable results in aesthetic evaluation, and produces visually coherent fusion outputs. The code will be publicly available.</p></div>
+        <p>To optimize this protocol, we introduce protocol-guided prompt refinement, a closed-loop learning framework that iteratively performs generation, evaluation, and revision under multimodal evidence. Once learned, the optimized protocol is fixed at inference time and directly guides fusion generation. To address residual source inconsistencies, we further incorporate structured belief construction, which organizes modality reliability, scene evidence, and cross-modal conflicts into a structured representation for conservative correction after generation. Extensive experiments on standard benchmarks show that ProtoFusion improves quantitative performance, achieves favorable results in aesthetic evaluation, and produces visually coherent fusion outputs.</p></div>
         </details><details class="fold"><summary>Framework at a glance</summary><figure data-figure="overview"><figcaption>Protocol-constrained generation and optional source-consistency correction. Original overview from the manuscript.</figcaption></figure></details>
       </section>
 
@@ -73,10 +73,10 @@
 
       <section id="infrared" class="section">
         <div class="section-kicker">03 / Input ablation</div><h2>What does <span>infrared contribute?</span></h2>
-        <p class="lede">The paired infrared input changes target visibility and structural rendering relative to the VIS-only setting.</p>
+        <p class="lede">Keep the visible image fixed. Compare no infrared, unrelated infrared and the original paired infrared.</p>
         <div id="ir-cases" class="case-strip"></div><div id="ir-detail"></div>
-        <p class="caption">Eight examples from the infrared-input ablation. The diagonal input panel and highlighted details are taken directly from the figure. Red annotations belong to the original evidence.</p>
-        <details class="fold"><summary>View the full input ablation</summary><figure data-figure="ir"><figcaption>Figure 6 · IR/VIS inputs, VIS-only generation and IR+VIS generation.</figcaption></figure></details>
+        <p class="caption">Eight examples under the same optimized protocol and generation settings. Unrelated infrared can introduce unsupported targets and structures; paired infrared supplies scene-specific evidence. All highlights are retained from the original figure.</p>
+        <details class="fold"><summary>View the full input ablation</summary><figure data-figure="ir"><figcaption>Figure 6 · Visible, paired IR and shuffled IR inputs, with VIS-only, shuffled IR+VIS and original IR+VIS outputs.</figcaption></figure></details>
       </section>
 
       <section id="refinement" class="section">
@@ -87,10 +87,16 @@
         <h3>How much refinement?</h3>
         <div class="control-row"><p class="minor-title">FMB · UniPercept</p><div id="budget-metrics"></div></div>
         <div id="budget-chart" class="budget-chart"></div>
-        <p class="caption">All 280 FMB test pairs; base PGPR without SBC. T = 6 gives the highest reported Overall score among these budgets. More rounds do not guarantee better measured quality.</p>
+        <p class="caption">All 280 FMB test pairs; base PGPR without SBC. T = 6 leads in IQA and Overall; T = 9 gives marginal gains in IAA and ISTA. The highest value for the selected metric is highlighted.</p>
         <h3>What belongs in the protocol?</h3>
         <div id="component-options" class="component-options"></div><div id="component-result" class="component-result" aria-live="polite"></div>
         <p class="caption">Component ablation on all 280 FMB test pairs. Full PGPR uses T = 6 without SBC; the initial and optimized protocols are different experimental settings.</p>
+        <h3>Why a structured protocol?</h3>
+        <p class="prose">Open-ended VLM prompt optimization starts from the human prompt. PGPR instead refines explicit protocol slots through source-grounded diagnosis and validated edits.</p>
+        <div class="control-row"><p class="minor-title">FMB · UniPercept</p><div id="prompt-metrics"></div></div>
+        <div id="prompt-comparison" class="benchmark-chart prompt-comparison" aria-live="polite"></div>
+        <p class="caption">VLM-optimized prompting improves IAA but lowers IQA and ISTA relative to the human prompt. PGPR improves all three; optional SBC further improves the reported scores.</p>
+        <details class="fold"><summary>Full prompt optimization and SBC results</summary><div id="prompt-table" class="table-wrap" tabindex="0" role="region" aria-label="Prompt optimization and SBC results"></div></details>
       </section>
 
       <section id="correction" class="section comparison-section">
@@ -99,7 +105,7 @@
         <p class="caption">Compare base PGPR with PGPR + SBC in four examples. SBC performs at most one additional generation; when no valid correction is available, the prior output is retained.</p>
         <div class="evidence-metrics-head"><div><span class="eyebrow">Error rate · lower is better</span><h3>Fewer errors. Residual errors remain.</h3></div><label class="select-label">Category <select id="error-category"><option>Any error</option><option>Content alteration</option><option>Geometric distortion</option><option>Information omission</option><option>Appearance artifacts</option></select></label></div>
         <div id="error-chart" class="error-chart" aria-live="polite"></div>
-        <p class="caption">Comprehensive human review of all 280 FMB test pairs. Categories can overlap; “Any error” counts each affected image once. These measurements describe the reviewed test set, not a guarantee of source fidelity.</p>
+        <p class="caption">Comprehensive human review of all 280 FMB test pairs. Only definite errors enter the numerator. Categories can overlap; “Any error” counts each affected image once. These measurements describe the reviewed test set, not a guarantee of source fidelity.</p>
         <details class="fold"><summary>View the complete SBC examples and error table</summary><figure data-figure="correction"><figcaption>Figure 8 · Infrared, visible, PGPR and PGPR + SBC.</figcaption></figure><div id="error-table" class="table-wrap" tabindex="0" role="region" aria-label="Full error rates"></div></details>
       </section>
 
@@ -120,15 +126,17 @@
         <div class="section-kicker">07 / Quantitative evaluation</div><h2>A shared protocol.<br><span>Three benchmarks.</span></h2>
         <p class="lede">A single protocol, refined on FMB training data, is evaluated on the full test sets of FMB, MSRS and RoadScene.</p>
         <div class="dataset-facts"><span><strong>280</strong>FMB pairs</span><span><strong>361</strong>MSRS pairs</span><span><strong>221</strong>RoadScene pairs</span></div>
+        <div id="eval-families" class="eval-family-row"></div>
         <div class="control-row"><div id="eval-datasets"></div><div id="eval-metrics"></div></div>
-        <div class="chart-heading"><h3 id="benchmark-title">UniPercept · FMB · Overall</h3><span>Higher is better ↑</span></div>
+        <div class="chart-heading"><h3 id="benchmark-title">UniPercept · FMB · Overall</h3><span id="benchmark-direction">Higher is better ↑</span></div>
         <div id="benchmark-chart" class="benchmark-chart" aria-live="polite"></div>
-        <p class="caption">ProtoFusion uses PGPR + SBC on all three benchmarks. UniPercept reports image aesthetics (IAA), image quality (IQA), structure and texture (ISTA) and its aggregate Overall score. All methods and values are retained below.</p>
+        <p id="benchmark-caption" class="caption">ProtoFusion uses PGPR + SBC on all three benchmarks. UniPercept reports image aesthetics (IAA), image quality (IQA), structure and texture (ISTA) and its aggregate Overall score. All methods and values are retained below.</p>
         <details class="fold"><summary>Full UniPercept results</summary><div id="uni-tables"></div></details>
         <details class="fold"><summary>Full image-quality results · nine metrics</summary><p class="caption">Directions are shown in each column. Bold marks the best result; an underline marks second best. Values retain the manuscript’s four-decimal precision.</p><div id="main-tables"></div></details>
+        <details class="fold"><summary>Full source-referenced results · CE, Q_AB/F and VIF</summary><p class="caption">Thirteen methods on FMB, MSRS and RoadScene. Lower CE and higher Q_AB/F and VIF are better. Bold marks the best result; an underline marks second best.</p><div id="source-tables"></div></details>
         <h3>Downstream semantic segmentation</h3>
         <p class="prose">A frozen CLIPer evaluates the fused images on the FMB test set. The manuscript reports eight classes, with mean IoU and mean accuracy summarized below.</p>
-        <div class="seg-summary"><div><span>Mean IoU ↑</span><strong>0.554</strong><small>Text-IF: 0.513</small></div><div><span>Mean accuracy ↑</span><strong>0.684</strong><small>Text-IF: 0.637</small></div><p>Road · Building · Sky · Car<br>Truck · Bus · Vegetation · Pole</p></div>
+        <div class="seg-summary"><div><span>Mean IoU ↑</span><strong id="seg-iou"></strong><small id="seg-iou-baseline"></small></div><div><span>Mean accuracy ↑</span><strong id="seg-acc"></strong><small id="seg-acc-baseline"></small></div><p>Road · Building · Sky · Car<br>Truck · Bus · Vegetation · Pole</p></div>
         <details class="fold"><summary>Full segmentation results · eight reported classes</summary><div id="seg-table" class="table-wrap" tabindex="0" role="region" aria-label="FMB segmentation results"></div></details>
       </section>
 
@@ -150,7 +158,7 @@
       </section>
     </main>
   </div>
-  <footer><span>ProtoFusion · 2026</span><p>Page design inspired by <a href="https://github.com/Dwawayu/scr4tch" target="_blank" rel="noopener noreferrer">Scr4tch ↗</a><br>All experimental images and results are from the current ProtoFusion manuscript.</p><a href="#top">Back to top ↑</a></footer>
+  <footer><span>ProtoFusion · 2026</span><p>Page design inspired by <a href="https://github.com/Dwawayu/scr4tch" target="_blank" rel="noopener noreferrer">Scr4tch ↗</a><br>Experimental evidence synchronized with the manuscript of 28 October 2026.</p><a href="#top">Back to top ↑</a></footer>
 </div>
 <dialog id="image-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span id="dialog-title">Figure</span><button id="close-dialog" class="text-button" aria-label="Close enlarged figure">Close ×</button></div><img id="dialog-image" alt=""><p class="caption">Scroll to inspect the full figure. Press Escape to close.</p></dialog>
 <noscript><p class="noscript">Enable JavaScript to explore the image comparisons and interactive results.</p></noscript>

@@ -94,11 +94,40 @@ for i, keys in enumerate([[1,2,3,4],[5,6,7,8],[19,21,23,17],[9,11,13,15]]):
         inset_keys = [20,22,24,18] if i == 2 else [10,12,14,16]
         sbc[-1]['insets'] = [extract('Fig06_SBC.pdf', f'/Im{k}', f'sbc-{i+1}-crop-{j}') for j,k in enumerate(inset_keys)]
 
-ir_cases = []
-for i, start in enumerate([1,8,15,22,29,36,43,50]):
-    imgs = [extract('Fig09_OnlyVIS.pdf', f'/Im{k}', f'ir-{i+1}-{j}') for j,k in enumerate(range(start,start+3))]
-    insets = [extract('Fig09_OnlyVIS.pdf', f'/Im{k}', f'ir-{i+1}-crop-{j}') for j,k in enumerate(range(start+3,start+7))]
-    ir_cases.append({'name': f'Case {i+1:02}', 'images': dict(zip(['input','VIS-only','IR+VIS'], imgs)), 'insets':insets})
+def infrared_controls():
+    """Read the eight columns of the current Figure 6, including its vector annotations."""
+    src = SOURCE / 'Fig06_IRControls.pdf'
+    page = PdfReader(src).pages[0]
+    objects = page['/Resources']['/XObject']
+    bands = {}
+    def visitor(op, args, cm, tm):
+        if op == b'Do' and objects[args[0]].get('/Subtype') == '/Image':
+            x, y, width, height = cm[4], cm[5], cm[0], cm[3]
+            bands.setdefault(round(y + height / 2), []).append((x, y, width, height))
+    page.extract_text(visitor_operand_before=visitor)
+    bands = [sorted(bands[y]) for y in sorted(bands, reverse=True)]
+    assert [len(band) for band in bands] == [8, 8, 8, 8, 8, 16, 8]
+    doc = pdfium.PdfDocument(src)
+    scale = 3
+    full = doc[0].render(scale=scale).to_pil()
+    page_height = float(page.mediabox.height)
+    def panel(box, name):
+        x, y, width, height = box
+        crop = full.crop(tuple(round(v * scale) for v in
+                              (x, page_height-y-height, x+width, page_height-y)))
+        return save_image(crop, name, src,
+                          f'Full panel rendered from PDF rectangle {[round(v, 3) for v in box]}; original annotations preserved.', 900)
+    cases = []
+    roles = ['VIS', 'IR', 'Shuffled IR', 'Shuffled IR+VIS', 'VIS-only', 'IR+VIS']
+    for i in range(8):
+        images = {role: panel(bands[row][i], f'ir-control-{i+1}-{j}')
+                  for j, (role, row) in enumerate(zip(roles, [0, 1, 2, 3, 4, 6]))}
+        insets = [panel(bands[5][i*2+j], f'ir-control-{i+1}-detail-{j}') for j in range(2)]
+        cases.append({'name': f'Case {i+1:02}', 'images': images, 'insets': insets})
+    doc.close()
+    return cases
+
+ir_cases = infrared_controls()
 
 trajectories = []
 for row in range(2):
@@ -112,48 +141,72 @@ for row in range(4):
 
 figures = {}
 for filename, key in [('Fig01_state.pdf','overview'),('Fig02_protocoldiagram.pdf','pgpr'),('Fig03_SBCdiagram.pdf','sbc'),
-                      ('Fig04_trr.pdf','night'),('Fig11_final_visual_day.pdf','day'),('Fig09_OnlyVIS.pdf','ir'),
+                      ('Fig04_trr.pdf','night'),('Fig11_final_visual_day.pdf','day'),('Fig06_IRControls.pdf','ir'),
                       ('Fig05_PGPRv1.pdf','trajectory'),('Fig06_SBC.pdf','correction'),('Fig13_GPTImage2.pdf','transfer')]:
     figures[key] = render(filename, 'figure-'+key, 2400 if key in ['night','day','ir','correction','transfer'] else 2000)
 for filename, key in [('Fig07b_intrinsic_functional_factor_map_pub.png','factor-map'),('Fig07c_control_allocation_profile_matched_style.png','allocation')]:
     figures[key] = save_image(Image.open(SOURCE/filename), 'figure-'+key, SOURCE/filename, 'Whole image, scaled proportionally.', 1800)
 
-tex = (SOURCE/'sn-article.tex').read_text(encoding='utf-8')
+tex = re.sub(r'(?<!\\)%[^\n]*', '', (SOURCE/'sn-article.tex').read_text(encoding='utf-8'))
 def table(label):
     start = tex.index('\\label{'+label+'}')
-    end = tex.index('\\end{table',start)
-    return tex[start:end]
+    # The appendix table uses captionof inside a minipage rather than a float.
+    end = re.search(r'\\end\{(?:table\*?|minipage)\}', tex[start:])
+    assert end, label
+    return tex[start:start+end.start()]
 
-def rows(block, numeric_start, ncols):
+def rows(block, numeric_start, ncols, labels=None):
+    labels = labels or ['CDDFuse','DDFM','TIMFusion','Text-IF','C2RF','DCEvo','Deno-IF','LUT-Fuse','APTP','DPOFusion','DRFusion','ISFuse','ProtoFusion']
     out = []
     for segment in block.split('\\\\'):
         cells = segment.split('&')
         if len(cells) != numeric_start+ncols:
             continue
-        method = next((m for m in ['CDDFuse','DDFM','TIMFusion','Text-IF','C2RF','DCEvo','Deno-IF','LUT-Fuse','DRFusion','ISFuse','ProtoFusion'] if m in cells[0]), None)
+        method = next((m for m in sorted(labels, key=len, reverse=True) if m in cells[0]), None)
         if not method:
             continue
         vals = [re.search(r'\d+\.\d+', c) for c in cells[numeric_start:]]
         if all(vals):
-            out.append({'method':method,'values':[float(v.group()) for v in vals]})
+            row = {'method':method,'values':[float(v.group()) for v in vals]}
+            if numeric_start == 2:
+                row['venue'] = cells[1].strip()
+            out.append(row)
     return out
 
 main = rows(table('tab:main_three_datasets'),2,9)
-uni = rows(table('tab:subjective_three_subtables'),1,12)
+uni = rows(table('tab:subjective_three_subtables'),2,12)
 seg = rows(table('tab:fmb_seg_selected'),2,18)
+source_metrics = rows(table('tab:traditional_metrics'),2,9)
+budget = rows(table('tab:pgpr_rounds'),1,4,['$T=1$','$T=3$','$T=6$','$T=9$'])
+components = rows(table('tab:pgpr_component_ablation'),1,4,
+                  ['Human Prompt','Initial Protocol','Principles Only','w/o State Cards','w/o Style Profile','Full PGPR'])
+prompt_comparison = rows(table('tab:ablation_sbc'),1,4,
+                        ['Human Prompt','VLM-optimized Prompt','PGPR','PGPR+SBC'])
+errors = rows(table('tab:fmb-four-category-errors'),1,3,
+              ['Content alteration','Geometric distortion','Information omission','Appearance artifacts','Any error'])
 assert len(main)==33 and len(uni)==11 and len(seg)==11, (len(main),len(uni),len(seg))
+assert [len(source_metrics), len(budget), len(components), len(prompt_comparison), len(errors)] == [13, 4, 6, 4, 5]
 data = {'scenes':scenes, 'sbc':sbc, 'irCases':ir_cases,'trajectories':trajectories,'transfer':transfer,'figures':figures,
         'hero':[{'name':s['name'],'images':{'IR':s['images']['IR'],'VIS':s['images']['VIS'],'ProtoFusion':s['images']['SBC']}} for s in sbc[:2]] + [dict(name=s['name'],images={k:s['images'][k] for k in ['IR','VIS','ProtoFusion']}) for s in scenes[6:]],
         'metrics':['IAA','IQA','ISTA','Overall'], 'datasets':['FMB','MSRS','RoadScene'],
         'mainMetrics':['CLIPIQA ↑','MUSIQ ↑','PAQ2PIQ ↑','MANIQA ↑','BRISQUE ↓','TReS ↑','EN ↑','SD ↑','SF ↑'],
         'main':{d:main[i*11:(i+1)*11] for i,d in enumerate(['FMB','MSRS','RoadScene'])},
-        'uni':{d:[{'method':r['method'],'values':r['values'][i*4:(i+1)*4]} for r in uni] for i,d in enumerate(['FMB','MSRS','RoadScene'])},
+        'uni':{d:[{**r,'values':r['values'][i*4:(i+1)*4]} for r in uni] for i,d in enumerate(['FMB','MSRS','RoadScene'])},
+        'sourceMetrics':['CE ↓','Q_AB/F ↑','VIF ↑'],
+        'sourceResults':{d:[{**r,'values':r['values'][i*3:(i+1)*3]} for r in source_metrics] for i,d in enumerate(['FMB','MSRS','RoadScene'])},
+        'budget':[{'label':r['method'].replace('$','').replace('=',' = '),'values':r['values']} for r in budget],
+        'components':[{'label':r['method'],'values':r['values']} for r in components],
+        'promptComparison':prompt_comparison,
+        'errorRates':{r['method']:r['values'] for r in errors},
         'seg':seg, 'sizes':{p:[m['width'],m['height']] for p,m in manifest['assets'].items()}}
 (SITE/'data.js').write_text('/* Generated from the current Article_Title manuscript. See sources.json. */\nwindow.PROTO_DATA = '+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 manifest['manuscript_sha256'] = digest(SOURCE/'sn-article.tex')
 manifest['paper_sha256'] = digest(SOURCE/'sn-article.pdf')
 manifest['reference_zip_sha256'] = digest(ROOT/'scr4tch-gh-pages.zip')
-manifest['processing'] = 'Full embedded images or full PDF renders; proportional resizing and WebP compression only. No inpainting, recoloring or synthesized outputs.'
+manifest['processing'] = 'Full embedded images, whole-figure renders, or complete panel renders preserving PDF annotations; proportional resizing and WebP compression only. No inpainting, recoloring or synthesized outputs.'
+manifest['tables'] = ['tab:main_three_datasets','tab:subjective_three_subtables','tab:fmb_seg_selected',
+                      'tab:traditional_metrics','tab:pgpr_rounds','tab:pgpr_component_ablation',
+                      'tab:ablation_sbc','tab:fmb-four-category-errors']
 (SITE/'sources.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 
 fonts = ASSETS/'fonts'
@@ -162,20 +215,21 @@ font_path = fonts/'archivo-variable.ttf'
 if not font_path.exists():
     urllib.request.urlretrieve('https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth,wght%5D.ttf',font_path)
     urllib.request.urlretrieve('https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt',fonts/'OFL.txt')
-try:
-    from fontTools import subset
-    options = subset.Options()
-    options.flavor = 'woff2'
-    font = subset.load_font(str(font_path), options)
-    sub = subset.Subsetter(options=options)
-    sub.populate(unicodes=list(range(32,383))+list(range(8192,8304))+list(range(8592,8704)))
-    sub.subset(font)
-    subset.save_font(font, str(fonts/'archivo-latin.woff2'), options)
-except ImportError:
-    request = urllib.request.Request('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap', headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'})
-    css = urllib.request.urlopen(request, timeout=20).read().decode()
-    font_urls = re.findall(r'url\(([^)]+\.woff2)\)', css)
-    urllib.request.urlretrieve(font_urls[-1], fonts/'archivo-latin.woff2')
+if not (fonts/'archivo-latin.woff2').exists():
+    try:
+        from fontTools import subset
+        options = subset.Options()
+        options.flavor = 'woff2'
+        font = subset.load_font(str(font_path), options)
+        sub = subset.Subsetter(options=options)
+        sub.populate(unicodes=list(range(32,383))+list(range(8192,8304))+list(range(8592,8704)))
+        sub.subset(font)
+        subset.save_font(font, str(fonts/'archivo-latin.woff2'), options)
+    except ImportError:
+        request = urllib.request.Request('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap', headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'})
+        css = urllib.request.urlopen(request, timeout=20).read().decode()
+        font_urls = re.findall(r'url\(([^)]+\.woff2)\)', css)
+        urllib.request.urlretrieve(font_urls[-1], fonts/'archivo-latin.woff2')
 
-print(f'Built {len(manifest["assets"])} visual assets; 33 benchmark, 33 UniPercept and 11 segmentation rows.')
+print(f'Built {len(manifest["assets"])} visual assets; 33 benchmark, 33 UniPercept, 39 source-referenced and 11 segmentation rows; all ablations extracted from the current manuscript.')
 print(f'Asset total: {sum(p.stat().st_size for p in ASSETS.rglob("*") if p.is_file())/1024/1024:.2f} MiB')

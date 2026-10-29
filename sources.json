@@ -869,397 +869,453 @@
       "width": 128,
       "height": 128
     },
-    "assets/ir-1-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im1; full image, original aspect ratio.",
-      "width": 800,
+    "assets/ir-control-1-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
       "height": 600
     },
-    "assets/ir-1-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im2; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-1-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im3; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-1-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im4; full image, original aspect ratio.",
-      "width": 206,
-      "height": 182
-    },
-    "assets/ir-1-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im5; full image, original aspect ratio.",
-      "width": 206,
-      "height": 182
-    },
-    "assets/ir-1-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im6; full image, original aspect ratio.",
-      "width": 306,
-      "height": 270
-    },
-    "assets/ir-1-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im7; full image, original aspect ratio.",
-      "width": 306,
-      "height": 270
-    },
-    "assets/ir-2-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im8; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
-    },
-    "assets/ir-2-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im9; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-2-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im10; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-2-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im11; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-2-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im12; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-2-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im13; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-2-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im14; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-3-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im15; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
-    },
-    "assets/ir-3-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im16; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-3-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im17; full image, original aspect ratio.",
-      "width": 1000,
-      "height": 757
-    },
-    "assets/ir-3-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im18; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-3-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im19; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-3-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im20; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-3-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im21; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-4-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im22; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
-    },
-    "assets/ir-4-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im23; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-4-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im24; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
-    },
-    "assets/ir-4-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im25; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-4-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im26; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
-    },
-    "assets/ir-4-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im27; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-4-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im28; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
-    },
-    "assets/ir-5-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im29; full image, original aspect ratio.",
-      "width": 800,
+    "assets/ir-control-1-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
       "height": 600
     },
-    "assets/ir-5-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im30; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-1-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-5-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im31; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-1-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-5-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im32; full image, original aspect ratio.",
-      "width": 206,
-      "height": 182
+    "assets/ir-control-1-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-5-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im33; full image, original aspect ratio.",
-      "width": 206,
-      "height": 182
+    "assets/ir-control-1-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-5-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im34; full image, original aspect ratio.",
-      "width": 306,
-      "height": 270
+    "assets/ir-control-1-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [204.0, 224.544, 132.5, 116.912]; original annotations preserved.",
+      "width": 398,
+      "height": 350
     },
-    "assets/ir-5-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im35; full image, original aspect ratio.",
-      "width": 306,
-      "height": 270
+    "assets/ir-control-1-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [338.5, 224.544, 132.5, 116.912]; original annotations preserved.",
+      "width": 397,
+      "height": 350
     },
-    "assets/ir-6-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im36; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
+    "assets/ir-control-2-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-6-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im37; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-2-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-6-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im38; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-2-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-6-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im39; full image, original aspect ratio.",
-      "width": 148,
-      "height": 130
+    "assets/ir-control-2-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-6-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im40; full image, original aspect ratio.",
-      "width": 148,
-      "height": 130
+    "assets/ir-control-2-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-6-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im41; full image, original aspect ratio.",
-      "width": 276,
-      "height": 242
+    "assets/ir-control-2-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-6-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im42; full image, original aspect ratio.",
-      "width": 276,
-      "height": 242
+    "assets/ir-control-2-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [483.0, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 397,
+      "height": 350
     },
-    "assets/ir-7-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im43; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
+    "assets/ir-control-2-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [617.5, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 398,
+      "height": 350
     },
-    "assets/ir-7-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im44; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-3-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-7-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im45; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-3-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-7-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im46; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
+    "assets/ir-control-3-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-7-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im47; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
+    "assets/ir-control-3-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-7-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im48; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
+    "assets/ir-control-3-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-7-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im49; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
+    "assets/ir-control-3-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 13.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-8-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im50; full image, original aspect ratio.",
-      "width": 640,
-      "height": 480
+    "assets/ir-control-3-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [762.0, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 398,
+      "height": 350
     },
-    "assets/ir-8-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im51; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-3-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [896.5, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 397,
+      "height": 350
     },
-    "assets/ir-8-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im52; full image, original aspect ratio.",
-      "width": 908,
-      "height": 687
+    "assets/ir-control-4-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-8-crop-0.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im53; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
+    "assets/ir-control-4-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-8-crop-1.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im54; full image, original aspect ratio.",
-      "width": 158,
-      "height": 140
+    "assets/ir-control-4-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
     },
-    "assets/ir-8-crop-2.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im55; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
+    "assets/ir-control-4-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
     },
-    "assets/ir-8-crop-3.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
-      "extraction": "Embedded image /Im56; full image, original aspect ratio.",
-      "width": 296,
-      "height": 260
+    "assets/ir-control-4-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-4-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-4-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1041.0, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 397,
+      "height": 350
+    },
+    "assets/ir-control-4-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1175.5, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 398,
+      "height": 350
+    },
+    "assets/ir-control-5-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-5-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-5-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-5-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-5-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-5-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-5-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1320.0, 224.544, 132.5, 116.912]; original annotations preserved.",
+      "width": 398,
+      "height": 350
+    },
+    "assets/ir-control-5-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1454.5, 224.544, 132.5, 116.912]; original annotations preserved.",
+      "width": 397,
+      "height": 350
+    },
+    "assets/ir-control-6-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-6-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-6-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-6-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-6-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-6-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-6-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1599.0, 224.911, 132.5, 116.177]; original annotations preserved.",
+      "width": 397,
+      "height": 348
+    },
+    "assets/ir-control-6-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1733.5, 224.911, 132.5, 116.177]; original annotations preserved.",
+      "width": 398,
+      "height": 348
+    },
+    "assets/ir-control-7-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-7-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-7-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-7-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-7-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-7-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-7-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [1878.0, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 398,
+      "height": 350
+    },
+    "assets/ir-control-7-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2012.5, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 397,
+      "height": 350
+    },
+    "assets/ir-control-8-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 1218.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-8-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 1006.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-8-2.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 794.875, 267.0, 200.25]; original annotations preserved.",
+      "width": 801,
+      "height": 600
+    },
+    "assets/ir-control-8-3.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 561.973, 267.0, 202.054]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-8-4.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 349.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-8-5.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 13.993, 267.0, 202.014]; original annotations preserved.",
+      "width": 801,
+      "height": 606
+    },
+    "assets/ir-control-8-detail-0.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2157.0, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 397,
+      "height": 350
+    },
+    "assets/ir-control-8-detail-1.webp": {
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
+      "extraction": "Full panel rendered from PDF rectangle [2291.5, 224.807, 132.5, 116.385]; original annotations preserved.",
+      "width": 398,
+      "height": 350
     },
     "assets/pgpr-1-0.webp": {
       "source": "Article_Title/Fig05_PGPRv1.pdf",
@@ -1479,11 +1535,11 @@
       "height": 733
     },
     "assets/figure-ir.webp": {
-      "source": "Article_Title/Fig09_OnlyVIS.pdf",
-      "source_sha256": "bc2a50c82d8d97a02374b77b98e6267e2ca49d28e73735b1b12efa1c1df8a985",
+      "source": "Article_Title/Fig06_IRControls.pdf",
+      "source_sha256": "44bc82f72f915aa4937c7152cfed2fe5fadffd5f6c9869ddac7c91785531b8d1",
       "extraction": "Full first-page render; all original annotations preserved.",
       "width": 2400,
-      "height": 941
+      "height": 1405
     },
     "assets/figure-trajectory.webp": {
       "source": "Article_Title/Fig05_PGPRv1.pdf",
@@ -1521,8 +1577,18 @@
       "height": 1079
     }
   },
-  "manuscript_sha256": "3e5fa6aa5ed7d77311d1aeca73f6fb41bfd8c6805e23a5aeb750c43b9c230be1",
-  "paper_sha256": "e6e996cf53cbf6bbc80aebb1b247cfa889a41ebf2983931d4d3796b11f4f00d0",
+  "manuscript_sha256": "1700a0d37b299c2798211c690f6a10dd3d4f51549a8a3cc5d6ac3415a86a5752",
+  "paper_sha256": "b84c92d312e7658da2e8a8c235ab19565dedd7098739827bcb892c259dfc1e5f",
   "reference_zip_sha256": "d54785e6a435fad570d44ec6d4597cf0b39182e3777e661b723b89784bc6d19a",
-  "processing": "Full embedded images or full PDF renders; proportional resizing and WebP compression only. No inpainting, recoloring or synthesized outputs."
+  "processing": "Full embedded images, whole-figure renders, or complete panel renders preserving PDF annotations; proportional resizing and WebP compression only. No inpainting, recoloring or synthesized outputs.",
+  "tables": [
+    "tab:main_three_datasets",
+    "tab:subjective_three_subtables",
+    "tab:fmb_seg_selected",
+    "tab:traditional_metrics",
+    "tab:pgpr_rounds",
+    "tab:pgpr_component_ablation",
+    "tab:ablation_sbc",
+    "tab:fmb-four-category-errors"
+  ]
 }
