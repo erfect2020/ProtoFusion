@@ -2,7 +2,7 @@
 
 **Protocol-Guided Prompt Refinement for Generative Infrared and Visible Image Fusion**
 
-Pengwei Liang, Junhui Hou, and Junjun Jiang.
+Pengwei Liang, Junjun Jiang, and Junhui Hou.
 
 [Project page](https://erfect2020.github.io/ProtoFusion/)
 
